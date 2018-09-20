@@ -32,3 +32,4 @@ g <- ggplot(xgrid, aes(x = X1, y = X2, col = ygrid)) +
 g + geom_point(data = data, aes(x = data[, 1], y = data[, 2], col = Y)) +
   guides(alpha = FALSE, size = FALSE) + theme_minimal() + 
   scale_color_brewer(palette = "Set1")
+
