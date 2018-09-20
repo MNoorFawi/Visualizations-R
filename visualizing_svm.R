@@ -30,6 +30,5 @@ g <- ggplot(xgrid, aes(x = X1, y = X2, col = ygrid)) +
 
 ## plotting the data on the grid to assess its performance
 g + geom_point(data = data, aes(x = data[, 1], y = data[, 2], col = Y)) +
-  guides(alpha = FALSE, size = FALSE) + theme_minimal() + 
-  scale_color_brewer(palette = "Set1")
+  guides(alpha = FALSE, size = FALSE) 
 
