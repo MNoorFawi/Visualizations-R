@@ -16,6 +16,7 @@ plot(df$percent_population, df$cum_density,
      type = "l", xlab = "% of Population", ylab = "% of values")
 
 ### Plotting lift chart with GGPLOT2
+library(ggplot2)
 ggplot(df, aes(x = percent_population)) + 
   geom_line(aes(y = cum_density), col = "cornflowerblue") + 
   xlab("% of Population") + ylab("% of values") +
@@ -25,3 +26,4 @@ ggplot(df, aes(x = percent_population)) +
            col = "black", size = 5) +
   annotate("rect", xmin = 0, xmax = 40, ymin = 0, ymax = 1, alpha = 0.2, 
            fill = "yellow") 
+
