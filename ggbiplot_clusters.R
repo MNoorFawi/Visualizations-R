@@ -1,4 +1,4 @@
-protein <- read.table('protein.txt', sep = '\t', header = TRUE)
+protein <- read.table("protein.txt", sep = "\t", header = TRUE)
 vars <- colnames(protein)[-1]
 protein_mat <- scale(protein[, vars])
 # library(devtools)
